@@ -1,6 +1,7 @@
 # 1files-js
 
 Monorepo collection of short js libs I used, either developed by myself or just found and modified according to my needs.  
+Even libs that maximize compatibility may now use ES6 features - you use Babel, right?
 Every developer credited and license respected. (See [LICENSE](LICENSE))
 
 ## Use the libs in another git

@@ -1,7 +1,7 @@
 # 1files-js
 
 Monorepo collection of short js libs I used, either developed by myself or just found and modified according to my needs.  
-Every developer credited and license respected.  
+Every developer credited and license respected. (See [](LICENSE.txt))
 
 ## Use the libs in another git
 You can either include all of those in a git submodule, or cherry-pick using branches (there is a branch named after every dir, including only the content of that dir at the root).  

@@ -9,7 +9,7 @@ You can either include all of those in a git submodule, or cherry-pick using bra
 Yes, you will cache a full submodule dir for every lib, but your source dir will be clean.
 ### import a lib
 - `touch .gitmodules` on project root if doesn't exist
-- `git submodule add -b file-saver git@github.com:c4ffein/1files-js.git LIBS_PATH/file-saver`
+- `git submodule add -b file-saver git@github.com:c4ffein/1files-js.git $libs_path/file-saver`
 
 #### Fix if submodule `already exists in the index`
 - Remove the files associated to the submodule in `.git/modules/`
@@ -24,3 +24,15 @@ Yes, you will cache a full submodule dir for every lib, but your source dir will
 - `git submodule foreach git pull` then commit
 
 ## The libs
+### file-saver
+### jwt-decode
+### object-helper
+### pdfobject
+### simple-drawing-board
+Just simple minimal canvas drawing lib.
+0 dependencies, modern browser compatibility, under 500 lines of code
+by (Yuji Sugiura)[https://github.com/leader22], see [](github.com/leader22/simple-drawing-board.js)
+
+### smallbreeze
+SmallBreeze, a 1 scss file alternative to the most used Tailwind classes, by c4ffein, MIT license
+

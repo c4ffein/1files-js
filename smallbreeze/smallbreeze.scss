@@ -1,0 +1,113 @@
+//
+// SmallBreeze
+// A 1 scss file alternative to the most used Tailwind classes
+//
+// Copyright (c) 2021 c4ffein
+// MIT license: https://github.com/c4ffein/1files-js/LICENSE.txt
+
+
+/////////////////////
+// Display         //
+/////////////////////
+
+.block        { display: block; }
+.inline       { display: inline; }
+.inline-block { display: inline-block; }
+.table        { display: table; }
+.none         { display: none; }
+.hidden       { visibility: hidden; }
+
+
+/////////////////////
+// Position        //
+/////////////////////
+
+.relative { position: relative; }
+.absolute { position: absolute; }
+.static   { position: static; }
+.fixed    { position: fixed; }
+
+
+//////////////////////////////////////
+// Flex  (see spacers for gap)      //
+//////////////////////////////////////
+
+.flex        { display: flex; }
+.inline-flex { display: inline-flex; }
+.f-col       { flex-direction: column; }
+.f-wrap      { flex-wrap: wrap; }
+.f-auto      { flex: auto; }
+
+.f-jc-center        { justify-content: center;}  // Center along the flow
+.f-jc-space-between { justify-content: space-between; }
+.f-jc-space-around  { justify-content: space-around; }
+
+.f-ai-center { align-items: center; }  // Center perpendicular to the flow
+
+.f-1 { flex: 1 }
+
+.f-grow-1 { flex-grow: 1; }
+.f-grow-2 { flex-grow: 2; }
+.f-grow-3 { flex-grow: 3; }
+
+
+/////////////////////
+// Text            //
+/////////////////////
+
+// Align
+.t-center  { text-align: center; }
+.t-left    { text-align: left; }
+.t-right   { text-align: right; }
+.t-justify { text-align: justify; }
+.t-balance { text-wrap: balance; }  // Still a CSS draft lol
+
+// Weight
+.t-normal { font-weight: normal; }
+.t-bold   { font-weight: bold; }
+
+// Undernline
+.underline-hover       { text-decoration: underline solid transparent; transition: text-decoration 0.3s ease; }
+.underline-hover:hover { text-decoration: underline solid Currentcolor; }
+
+// Other
+.pre-wrap        { white-space: pre-wrap; }
+.t-no-decoration { text-decoration: none; }
+
+
+/////////////////////
+// Cursor          //
+/////////////////////
+
+.pointer { cursor: pointer };
+
+
+/////////////////////
+// Image           //
+/////////////////////
+
+.i-contain { object-fit: contain; }
+.i-cover   { object-fit: cover; }
+
+
+/////////////////////
+// Background      //
+/////////////////////
+
+.bg-contain { background-size: contain; }
+.bg-cover   { background-size: cover; }
+
+
+///////////////////////
+// Overflow          //
+///////////////////////
+
+.overflow-hidden   { overflow: hidden; }
+.overflow-x-hidden { overflow-x: hidden; }
+.overflow-y-hidden { overflow-y: hidden; }
+.overflow-auto     { overflow: auto; }
+.overflow-x-auto   { overflow-x: auto; }
+.overflow-y-auto   { overflow-y: auto; }
+.overflow-scroll   { overflow: scroll; }
+.overflow-x-scroll { overflow-x: scroll; }
+.overflow-y-scroll { overflow-y: scroll; }

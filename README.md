@@ -29,9 +29,9 @@ Yes, you will cache a full submodule dir for every lib, but your source dir will
 ### object-helper
 ### pdfobject
 ### simple-drawing-board
-Just simple minimal canvas drawing lib.
-0 dependencies, modern browser compatibility, under 500 lines of code
-by [Yuji Sugiura](https://github.com/leader22), see [github.com/leader22/simple-drawing-board.js](https://github.com/leader22/simple-drawing-board.js)
+Just simple minimal canvas drawing lib.  
+0 dependencies, modern browser compatibility, under 500 lines of code  
+by [Yuji Sugiura](https://github.com/leader22), see [https://github.com/leader22/simple-drawing-board.js](https://github.com/leader22/simple-drawing-board.js)
 
 ### smallbreeze
 SmallBreeze, a 1 scss file alternative to the most used Tailwind classes, by c4ffein, MIT license

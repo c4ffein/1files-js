@@ -1,0 +1,98 @@
+//
+// Maz-comps
+// A 1 scss file solution to keep the style of Maz-ui components for some standard html objects
+// Useful if you used Maz-ui (https://github.com/LouisMazel/maz-ui) but some parts of your app aren't coded in Vue
+// Just in a PoC state, made it work only for buttons and inputs and some colors
+// Non-related to the Maz-ui dev team, no code reused, only styles, Maz-ui itself is MIT licensed
+//
+// Copyright (c) 2021 c4ffein
+// MIT license: https://github.com/c4ffein/1files-js/LICENSE.txt
+
+
+///////////////////////////////////////////////////////////
+// Default colors (you can replace those before import)  //
+///////////////////////////////////////////////////////////
+
+$primary-color:   #1155AA !default;
+$secondary-color: #FFC21D !default;
+$warning-color:   #FFAA00 !default;
+$error-color:     #CC0000 !default;
+$white-color:     #FFFFFF !default;
+$grey-color:      #AAAAAA !default;
+$darker-color:    #232323 !default;
+$black-color:     #000000 !default;
+
+
+//////////////////////
+// Buttons          //
+//////////////////////
+
+.btn {
+  -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+  @extend .no-select;
+  position: relative;
+  font-weight: bold;
+  transition: 0.3s;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 16px 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.btn[disabled] { cursor: not-allowed; }
+.btn:focus::before {
+  content: " ";
+  position: absolute;
+  z-index: 3;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 12px;
+  border: 2px solid $primary-color;
+}
+.btn:hover { text-decoration: none; }
+
+@function get_color($value) {
+  @if $value == "primary" { @return $primary-color; }
+  @if $value == "warning" { @return $warning-color; }
+  @if $value == "error" { @return $error-color; }
+  @if $value == "white" { @return $white-color; }
+  @else { @return $primary-color; }
+}
+$b_colors: primary warning error "white";
+@each $b_color in $b_colors {
+  .btn.#{$b_color} { background-color: get_color($b_color); color: white; text-decoration: none; }
+  .btn.#{$b_color}:focus::before { border: 2px solid get_color($b_color); }
+  .btn.#{$b_color}[disabled] { background-color: #eee; color: #666; text-decoration: none; }
+  .btn.#{$b_color}:not([disabled]):hover { background-color: darken(get_color($b_color), 10%); color: white; }
+  .btn.#{$b_color}.outline {
+    background-color: white;
+    color: get_color($b_color);
+    border: 2px solid get_color($b_color);
+    padding: 12px 16px;
+  }
+  .btn.#{$b_color}.outline:hover:not([disabled]) { background-color: get_color($b_color); color: white; }
+  .btn.#{$b_color}.outline:focus { padding: 12px 16px; background-color: get_color($b_color); color: white; }
+  .btn.#{$b_color}.small.outline:focus { padding: 12px 16px; background-color: get_color($b_color); color: white; }
+  .btn.#{$b_color}.outline:focus:before { top: -5px; left: -5px; right: -5px; bottom: -5px; }
+}
+.btn.small { padding: 12px 16px; }
+.btn.outline.small { padding: 8px 12px; }
+.btn.primary.outline:focus { padding: 6px 10px; }
+
+// Input
+.npt, .lnpt {
+  -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: #EEE;
+  transition: all 300ms ease-in-out;
+  outline: none;
+  min-height: 2.857rem;
+}
+.npt { height: 2.857rem; }
+.npt:focus, .lnpt:focus { border-color: $primary-color; }

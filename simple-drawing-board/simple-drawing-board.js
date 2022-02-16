@@ -1,10 +1,10 @@
 //
-// jwt-decode.js
+// simple-drawing-board.js
 // Extracted from the https://github.com/leader22/simple-drawing-board.js dist
 
 // Only modifications related to linter, all credits go to Yuji Sugiura (https://github.com/leader22)
 
-// Initial license : https://github.com/auth0/jwt-decode/blob/master/LICENSE (MIT)
+// Initial license : https://github.com/leader22/simple-drawing-board.js (MIT)
 // Source with potential future modifications : https://github.com/c4ffein/1files-js/LICENSE (MIT)
 
 

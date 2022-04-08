@@ -24,7 +24,8 @@ Yes, you will cache a full submodule dir for every lib, but your source dir will
 - `git submodule foreach git pull` then commit
 
 ## The libs
-### AOS - Animate on scroll
+### aos
+*AOS - Animate on scroll*
 Animate divs when scrolling to them with just some html attributes, needing both scss and js  
 Based on the [original AOS](https://github.com/michalsnik/aos) by [michalsnik](https://github.com/michalsnik/) at version `3.0.0-beta.6` as it hasn't been maintained since 2018  
 Original [MIT licensed, Copyright (c) 2015 Michał Sajnóg](https://github.com/michalsnik/aos/blob/next/LICENSE), needed [Lodash](https://github.com/lodash/lodash) as a dependency, replaced by [You-Dont-Need-Lodash-Underscore](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore) code snippets (also [MIT](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore/blob/master/LICENSE))
@@ -38,6 +39,12 @@ Just modified the file to not use a factory anymore
 "small browser library that helps decoding JWTs token which are Base64Url encoded"  
 Modified build from [https://github.com/auth0/jwt-decode](https://github.com/auth0/jwt-decode) (Copyright (c) 2015 Auth0, Inc. ; MIT License)  
 Made as 1-file, removed exposition through window logic but export instead, added comments, made shorter
+
+### maz-comps
+Maz-comps  
+A 1 scss file solution to keep the style of Maz-ui components for some standard html objects  
+Useful if you used [Maz-ui](https://github.com/LouisMazel/maz-ui) but some parts of your app aren't coded in Vue  
+Just includes buttons and imputs for now, MIT license
 
 ### object-helper
 Just some reusable js object manipulation shortcuts, by c4ffein, MIT license

@@ -1,0 +1,4 @@
+{
+  "dirtyComment": "This file is needed only for Node.js to resolve modules when running the tests",
+  "type": "module"
+}

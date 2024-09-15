@@ -7,7 +7,10 @@ export const oFE = array => Object.fromEntries(array);
 export const oK = object => Object.keys(object);
 export const oV = object => Object.values(object);
 
-export const n = o => (o == null);  // equivalent to (o === undefined || o === null);
 
 export const iA = o => Array.isArray(o);
 export const iO = o => typeof o === 'object' && o !== null;
+
+
+export const O = {e: oE, fE: oFE, k: oK, v: oV, i: iO};
+export const A = {i: iA};

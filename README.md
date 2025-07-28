@@ -46,9 +46,6 @@ A 1 scss file solution to keep the style of Maz-ui components for some standard 
 Useful if you used [Maz-ui](https://github.com/LouisMazel/maz-ui) but some parts of your app aren't coded in Vue  
 Just includes buttons and imputs for now, MIT license
 
-### object-helper
-Just some reusable js object manipulation shortcuts, by c4ffein, MIT license
-
 ### pdfobject
 "PDFObject is a lightweight JavaScript utility for dynamically embedding PDFs in HTML documents."  
 Source from [https://github.com/pipwerks/PDFObject/](https://github.com/pipwerks/PDFObject/)  
